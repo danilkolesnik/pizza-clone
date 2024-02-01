@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="keyword" data-react-helmet="true" content="pizza hut delivery, pizza hut order, pizza hut  "><meta name="description" data-react-helmet="true" content="Order delicious pizza, pasta, dessert, drinks &amp; more online at your favorite brand Pizza Hut! Order online, takeaway, or get your contactless pizza delivery!"><link rel="apple-touch-icon" sizes="57x57" href="favicons/6347--apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="favicons/8485--apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="favicons/3107--apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="favicons/1341--apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="favicons/3159--apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="favicons/447--apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="favicons/2403--apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="favicons/969--apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="favicons/1734--apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="favicons/3774--android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="favicons/7698--favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="favicons/7634--favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="favicons/3644--favicon-16x16.png"><link rel="icon" href="favicons/6100--favicon.ico"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#EE3A43"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#EE3A43"><link rel="manifest" href="/manifest.json"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&amp;display=swap"><title>Pizza Hut | Order Pizza Online - Delivery and Takeaway</title><link href="css/css-2.0bee910d.chunk.css" rel="stylesheet"><link href="css/css-main.abcf160a.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=%REACT_APP_GTM%" height="0" width="0" style="display:none;visibility:hidden" title="GTM"></iframe></noscript><div id="root"></div><script type="text/javascript">window.dataLayer=[],window.addEventListener("DOMContentLoaded",(function(){var t=document.createElement("div");t.setAttribute("style","width:30px;height:30px;"),t.classList.add("scrollbar-test");var e=document.createElement("div");e.setAttribute("style","width:100%;height:40px"),t.appendChild(e),document.body.appendChild(t),30-t.firstChild.clientWidth&&document.body.classList.add("layout-scrollbar-obtrusive"),document.body.removeChild(t)}))</script><script>!function(e){function t(t){for(var n,i,l=t[0],f=t[1],a=t[2],c=0,s=[];c<l.length;c++)i=l[c],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&s.push(o[i][0]),o[i]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(p&&p(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t<u.length;t++){for(var r=u[t],n=!0,l=1;l<r.length;l++){var f=r[l];0!==o[f]&&(n=!1)}n&&(u.splice(t--,1),e=i(i.s=r[0]))}return e}var n={},o={1:0},u=[];function i(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.m=e,i.c=n,i.d=function(e,t,r){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(i.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)i.d(r,n,function(t){return e[t]}.bind(null,n));return r},i.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="/";var l=this.webpackJsonpwebsite=this.webpackJsonpwebsite||[],f=l.push.bind(l);l.push=t,l=l.slice();for(var a=0;a<l.length;a++)t(l[a]);var p=f;r()}([])</script><script src="js/js-2.400f3e68.chunk.js"></script><script src="js/js-main.7ec4d06e.chunk.js"></script>
+
+<!-- <script>
+  // Обработчик ошибок для перенаправления в случае, если путь не был найден
+    window.addEventListener('error', function () {
+      console.log("Error occurred, redirecting to /");
+      window.location.href = '/';
+    });
+
+    // Вызываем функцию при загрузке страницы и при изменении истории (например, при перезагрузке)
+    window.addEventListener('load', handleRoute);
+    window.addEventListener('popstate', handleRoute);
+</script> -->
+
+<script>
+  // Обработчик изменения хеша (фрагмента) в URL
+  window.addEventListener('hashchange', () => {
+    // Получаем текущий хеш
+    const currentHash = window.location.hash;
+
+    // Ваша логика обработки хеша
+    // Например, вы можете загрузить содержимое страницы в зависимости от хеша
+    // и вставить его в div с id "app"
+    document.getElementById('app').innerHTML = `Content for ${currentHash}`;
+  });
+
+  // Инициализация при загрузке страницы
+  window.addEventListener('load', () => {
+    // Вызываем событие hashchange вручную при загрузке страницы
+    // чтобы обработать начальное состояние URL
+    window.dispatchEvent(new Event('hashchange'));
+  });
+</script>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // Делаем паузу (если необходимо) перед следующим кликом
     setTimeout(function () {
       var secondTab = document.querySelector('.MuiTabs-flexContainer [tabindex="-1"]');
-
       secondTab.click();
 
-    }, 500);
+    }, 250);
+    
+    function handleUrlChange() {
+      console.log('pop')
+      var currentPath = window.location.pathname;
+      var hash = "#";
+      var newUrl = window.location.origin + hash + currentPath;
+
+      // Заменяем текущий URL
+      window.history.replaceState({}, '', newUrl);
+
+      setTimeout(function () {
+        handleUrlChange()
+      }, 250);
+    }
+
+    // Вызываем handleUrlChange при изменении URL и при загрузке страницы
+    window.addEventListener('popstate', handleUrlChange);
+    window.addEventListener('load', handleUrlChange);
   });
-</script></body></html>
+</script>
+
+</body></html>
